@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f9f9f9;
+}
+
+.container{
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    box-shadow: 0 0 10px 0 dimgray;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.left-content{
+    width: 35%;
+}
+.left-content img{
+    width: 100%;
+}
+.right-content{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.subtitle{
+    font-size: 16px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-top: 70px;
+    color: dimgray;
+}
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    color: darkorange;
+    padding: 20px 0;
+}
+form{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+fieldset{
+    border-radius: 10px;
+    margin: 20px 0;
+    width: 100%;
+    color: dimgray;
+    border-color: rgb(233, 232, 232);
+}
+
+legend{
+    margin-left: 20px;
+}
+
+fieldset input{
+    line-height: 30px;
+    width:98%;
+    padding: 5px 10px;
+    margin: 2px;
+    outline: none;
+    border: none;
+}
+fieldset:nth-child(1){
+    width:48%;
+    margin-right: 10px;
+}
+fieldset:nth-child(2){
+    width:48%;
+}
+
+#lname, #fname{
+    width: 98%;
+    padding: 5px 10px;
+    margin: 2px;
+    outline: none;
+    border: none;
+}
+
+form input[type=submit]{
+    background-color: orange;
+    margin:0 auto;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+}
+
+form input[type=submit]:hover{
+    background-color: darkorange;
+}
+
+@media (max-width:768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    fieldset:nth-child(1){
+        width:98%;
+        margin-right: 10px;
+    }
+    fieldset:nth-child(2){
+        width:98%;
+    }
+}
